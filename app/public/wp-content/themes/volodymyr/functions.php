@@ -266,6 +266,7 @@ class StarterSite extends Timber\Site {
                     'with_front' => false,
                 ),
             );
+            /** There will be new parameters. */
 
             register_taxonomy('taxonomy_series', array('post'), $args);
         }
