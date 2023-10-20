@@ -65,8 +65,32 @@ class StarterSite extends Timber\Site {
 		add_filter( 'timber/twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'after_setup_theme', function(){
+        	register_nav_menus( [
+        		'header_menu' => 'Header menu',
+        		'footer_menu' => 'Footer menu'
+        	] );
+        } );
 		parent::__construct();
 	}
+        public function register_nav_menus( $locations = array(
+            'show_in_graphql' => true,
+            'graphql_single_name' => 'CaseStudy',
+            'graphql_plural_name' => 'CaseStudies',
+        )) {
+            global $_wp_registered_nav_menus;
+
+            add_theme_support( 'menus' );
+
+            foreach ( $locations as $key => $value ) {
+                if ( is_int( $key ) ) {
+                    _doing_it_wrong( __FUNCTION__, __( 'Nav menu locations must be strings.' ), '5.3.0' );
+                    break;
+                }
+            }
+
+            $_wp_registered_nav_menus = array_merge( (array) $_wp_registered_nav_menus, $locations );
+           }
 	/** This is where you can register custom post types. */
         public function register_post_types()
         {
@@ -270,6 +294,21 @@ class StarterSite extends Timber\Site {
 
             register_taxonomy('taxonomy_series', array('post'), $args);
         }
+    public function my_nav_menu( $args ) {
+
+    	$args = array_merge( [
+    		'container'       => 'div',
+    		'container_id'    => 'top-navigation-primary',
+    		'container_class' => 'top-navigation',
+    		'menu_class'      => 'menu main-menu menu-depth-0 menu-even',
+    		'echo'            => false,
+    		'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+    		'depth'           => 10,
+    		'walker'          => new My_Walker_Nav_Menu()
+    	], $args);
+
+    	echo wp_nav_menu( $args );
+    }
 	/** This is where you can register custom taxonomies. */
 	public function register_taxonomies() {
 

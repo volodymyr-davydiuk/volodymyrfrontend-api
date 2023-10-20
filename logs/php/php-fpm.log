@@ -1,2 +1,26 @@
 [19-Oct-2023 10:45:40] NOTICE: fpm is running, pid 6809
 [19-Oct-2023 10:45:40] NOTICE: ready to handle connections
+[19-Oct-2023 13:36:18] ERROR: Another FPM instance seems to already listen on /home/vova/.config/Local/run/4wWi-CrUN/php/php-fpm.socket
+[19-Oct-2023 13:36:18] ERROR: FPM initialization failed
+[19-Oct-2023 13:36:19] ERROR: Another FPM instance seems to already listen on /home/vova/.config/Local/run/4wWi-CrUN/php/php-fpm.socket
+[19-Oct-2023 13:36:19] ERROR: FPM initialization failed
+[19-Oct-2023 13:36:19] ERROR: Another FPM instance seems to already listen on /home/vova/.config/Local/run/4wWi-CrUN/php/php-fpm.socket
+[19-Oct-2023 13:36:19] ERROR: FPM initialization failed
+[19-Oct-2023 13:36:20] ERROR: Another FPM instance seems to already listen on /home/vova/.config/Local/run/4wWi-CrUN/php/php-fpm.socket
+[19-Oct-2023 13:36:20] ERROR: FPM initialization failed
+[19-Oct-2023 22:11:24] NOTICE: Terminating ...
+[19-Oct-2023 22:11:24] NOTICE: exiting, bye-bye!
+[20-Oct-2023 10:58:49] NOTICE: fpm is running, pid 26836
+[20-Oct-2023 10:58:49] NOTICE: ready to handle connections
+[20-Oct-2023 20:11:44] NOTICE: Terminating ...
+[20-Oct-2023 20:11:44] NOTICE: exiting, bye-bye!
+[20-Oct-2023 23:18:14] NOTICE: fpm is running, pid 54121
+[20-Oct-2023 23:18:14] NOTICE: ready to handle connections
+[21-Oct-2023 00:34:15] ERROR: Another FPM instance seems to already listen on /home/vova/.config/Local/run/4wWi-CrUN/php/php-fpm.socket
+[21-Oct-2023 00:34:15] ERROR: FPM initialization failed
+[21-Oct-2023 00:34:16] ERROR: Another FPM instance seems to already listen on /home/vova/.config/Local/run/4wWi-CrUN/php/php-fpm.socket
+[21-Oct-2023 00:34:16] ERROR: FPM initialization failed
+[21-Oct-2023 00:34:17] ERROR: Another FPM instance seems to already listen on /home/vova/.config/Local/run/4wWi-CrUN/php/php-fpm.socket
+[21-Oct-2023 00:34:17] ERROR: FPM initialization failed
+[21-Oct-2023 00:34:17] ERROR: Another FPM instance seems to already listen on /home/vova/.config/Local/run/4wWi-CrUN/php/php-fpm.socket
+[21-Oct-2023 00:34:17] ERROR: FPM initialization failed
